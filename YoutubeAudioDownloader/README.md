@@ -1,6 +1,6 @@
 # YoutubeAudioDownloader
 
-A python project used to download youtube audio. Impliments a functional GUI that allows the user to specify a download location for files.
+A python project used to download youtube audio. Impliments a functional GUI that allows the user to copy any youtube link to download and specify a download location for files.
 
 Audio will be downloaded in webm format but the ".webm" extention can be changed to ".mp3" if needed
 
