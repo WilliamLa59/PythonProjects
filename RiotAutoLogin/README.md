@@ -8,7 +8,7 @@ Feel free to make changes to the sleep timer. 8 seconds is what I find the most 
 
 	Use the command "pip install pynput" in cmd to install 
 
-Minor edits to the script must be made to properly login to riot account
+### Minor edits to the script must be made to properly login to riot account
 
 ## "applocation" needs the absolute path of the game client you want to launch. You'll also need to replace any "\\" with a "//"
 	
