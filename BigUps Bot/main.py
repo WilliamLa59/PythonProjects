@@ -1,19 +1,25 @@
 import discord
+from discord.ext import commands
 import os
+import music 
 
-client = discord.Client()
+token = os.environ['TOKEN']
+cog = [music]
+client = commands.Bot(command_prefix='!', intents = discord.Intents.all())
 
-@client.event
-async def on_ready():
-  print('logged in as {0.user}'.format(client))
+for i in range(len(cog)):
+  cog[i].setup(client)
 
-@client.event
-async def on_message(message):
-  if message.author == client.user:
-    return
+#@client.event
+#async def on_ready():
+#  print('logged in as {0.user}'.format(client))
 
-  if message.content.startswith('!yo'):
-    await message.channel.send('yo big ups my guy')
+#@client.event
+#async def on_message(message):
+#  if message.author == client.user:
+#    return
 
+#  if message.content.startswith('!yo'):
+#    await message.channel.send('yo big ups my guy')
 
-client.run(os.environ["TOKEN"])
+client.run(token)
